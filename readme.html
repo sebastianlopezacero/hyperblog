@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IComando Git y GitHub</title>
+</head>
+<body>
+	<p><strong>Git init</strong> Estas en la carpeta en la que están los archivos de tu proyecto</p>
+	<p>abres la terminal y ejecutas git init para indicar ue esta en la carpeta central de mis archivos. Cuano ejecutamos el comando, además creamos:</p>
+	<li>Stating, es el area en la memoria RAM que es done el principio iremos agregando los cambios</li>
+	<li>Reository (repositorio/master): Es el directorio que conocemos como /.git/ que es el lugardonde al final del proyecto quedarán todos los cambios</li>
+
+	<p><strong>git config - global user.name "mi nombre"</strong></p>
+	<li>Configuramos el git a nuestro nombre</li>
+
+	<p><strong>git config - global user.email "micorreo"</strong></p>
+	<li>Configuramos el git a nuestro correo</li>
+
+	<p><strong>git config --list</strong></p>
+	<li>Nos muestra la configuración por defecta denustro git</li>
+
+	<p><strong>git add archivo.txt</strong></p>
+	<li>Agregamos el archivo al stating, en ete punto el archivo epera a que lo agreguemos al repositorio. <strong>Nota:</strong>antes de usar este comonano, el archivo lo llamamos como un archivo untrcked. Luego de usar el comando el archivo lo podemos llamar un archivo tracked, cuando está ya en el staging</li>
+	<li><strong>&nbsp git add .</strong>Agregamos TOos los archivos dentro de nuestra carpeta Staging</li>
+
+
+	<p><strong>git rm --cached archivo.txt</strong></p>
+	<li>Eliminamos el archivo del staging area y lo volvemos Untracked</li>
+
+
+	<p><strong>git commit -m "mensaje"</strong></p>
+	<li>Luego de escribir un mensaje desriptivo de los cambios hechos, mandamos el archivo al repositorio/master. <strong>NOTA:</strong>Caa commit es una nueva versión con cambios de tu archivo</li>
+
+	<p><strong>git status</strong></p>
+	<li>Nos muestra la configuración por defecta denustro git</li>
+
+	<p><strong>git log</strong></p>
+	<li>Nos muestra el historial de commits hechos desde el mas reciente hasta el más viejo</li>
+
+	<p><strong>git log --stat</strong></p>
+	<li>Nos muestra el hilo de cambios especificos de cada commit desde el mas reciente hasta el mas viejo</li>
+
+		<p><strong>git show archivo.txt</strong></p>
+	<li>Muestra los cambios hechos al archivo en el último commit</li>
+
+		<p><strong>git ditt</strong></p>
+	<li>Nos muestra las diferencias entre los cambios que estan en staging y los que no se an añadido</li>
+
+	<p><strong>git ditt #commit1 #commit2</strong></p>
+	<li>Nos muestra las diferencias entre las dos versiones del commit</li>
+
+	<p><strong>git reset #commit --solt</strong></p>
+	<li>Volvemos nuestro archivo a la version del commit indicada, pero sin borrar los commits usados anteriormente</li>
+
+	<p><strong>git reset #commit --hard</strong></p>
+	<li>Volvemos nuestro archivo a la version del commit indicada, <strong>BORRANDO TODOS</strong> los commits usados anteriormente a la versión del commit indicada</li>
+
+	<p><strong>git checkout #commit archivo.txt</strong></p>
+	<li>Volvemos nuestro archivo a la versión del commit indicada, sin cambiar nada en el Staging</li>
+	<li><strong>&nbsp  git checkout master archivo.txt</strong> volvemos a nuestro archivo a la versión que teniamos antes de hacer el primer checkout, sin cambiar nada en el staging</li>
+
+</body>
+</html>
